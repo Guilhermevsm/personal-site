@@ -1,0 +1,309 @@
+body{
+    background: #131e3d ;
+}
+
+.container-intro{
+    height: 800px;
+}
+
+a{
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.bgimg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    object-fit: fill;
+}
+
+ul{
+    margin-top: 45px;
+    
+}
+
+li{
+    font-family: "Lucida Console", "Courier New", monospace; 
+    color: #131e3d;
+    margin-bottom: 5px;
+}
+
+h1{
+    font-family: "Lucida Console", "Courier New", monospace;  
+}
+
+.titulo-chamada{
+    font-size: 50px;
+    margin-top: 120px;
+    color: #cdad7d;
+    width: 100%;
+}
+
+h2{
+    color: #eeead6;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+h3{
+    color: #cdad7d;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    position:relative;
+    top: 33%;
+    margin-left: -20px;
+}
+
+.chamada{
+    position: relative;
+    top: 80px;
+    
+}
+
+.btn-contato{
+    background-color: #cdad7d;
+    margin-top: 40px;
+}
+
+.btn-contato:hover{
+    background-color: #eeead6;
+    
+}
+
+.btn-contato-a{
+    color: #131e3d;
+}
+
+.container-servicos{
+    background-color: #f4f1ec;
+    height: 1000px;
+}
+
+.titulo-servicos{
+    color: #222344;
+    font-size: 48px;
+    margin-bottom: 90px;
+}
+
+.card-1{
+    width: 420;
+    height: 480px;
+    background-color: #e8d1ae;
+    padding: 75px;
+}
+
+.card-2{
+    width: 420;
+    height: 480px;
+    background-color: #dbbf94;
+    padding: 75px;
+}
+
+.card-3{
+    width: 420;
+    height: 480px;
+    background-color: #cdad7d;
+    padding: 75px;
+}
+
+.perfil{
+    height: 800px;
+    background: #f4f1ec;
+}
+
+.titulo-perfil{
+    margin-top: 100px;
+    color: #222344;
+    font-size: 48px;
+}
+
+.texto-perfil{
+    margin-top: 20px;
+    color: #222344;
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+
+.img-perfil{
+    margin-top: 100px;
+    height: 500px;
+}
+
+.btn-perfil{
+    background-color: #cdad7d;
+    margin-top: 40px;
+    color: #131e3d;
+}
+
+.btn-perfil:hover{
+    background-color: #e8d1ae;
+}
+
+.projetos{
+    height: 900px;
+    padding-top: 120px ;
+}
+
+.titulo-projetos{
+    margin-top: 10px;
+    color: #cdad7d;
+    font-size: 48px;
+    text-align: center;
+}
+
+.texto-projetos{
+    margin-top: 30px;
+    color: #cdad7d;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.img-car{
+    margin-bottom: 25px;
+    border: 2px solid white;
+    border-color: #cdad7d;
+}
+.texto-car{
+    position: relative;
+    color: #cdad7d;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+
+.texto-car:hover{
+    color: #e8d1ae;
+}
+
+.rodape{
+    height: 275px;
+    background: #f4f1ec;
+    padding-top: 40px;
+}
+
+.texto-rodape{
+    color: #131e3d;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .container-intro{
+    height: 900px;
+    }
+    .card-2{
+    height: 500px;
+    }
+    .titulo-chamada{
+    margin-top: 35px;
+    font-size: 46px;
+    }
+    h2{
+    font-size: 18px;
+    }
+    .bgimg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: auto;
+    height: 1300px;
+    opacity: 0.1;
+    object-fit: fill;
+    }
+    .perfil{
+    height: 1400px;
+    background: #f4f1ec;
+    }
+    .btn-perfil{
+    margin-top: 0px;
+    }
+    .container-servicos{
+    height: 1700px;
+    }
+    .titulo-projetos{
+        font-size: 44px;
+    }
+    .rodape{
+        height: 450px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next{
+    color: #131e3d !important;
+}
+
+.swiper-button-prev{
+    color: #131e3d !important;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.hidden:nth-child(3){
+    transition-delay: 400ms;
+}
+
