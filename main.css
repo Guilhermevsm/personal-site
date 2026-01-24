@@ -11,6 +11,18 @@ a{
 
 }
 
+label{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+input{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+textarea{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -199,7 +211,7 @@ h3{
 
 .rodape{
     height: 275px;
-    background: #f4f1ec;
+    background: #cdad7d;
     padding-top: 40px;
 }
 
@@ -253,6 +265,14 @@ h3{
     .rodape{
         height: 450px;
     }
+    .hidden:nth-child(2){
+    transition-delay: 0ms;
+    }
+
+    .hidden:nth-child(3){
+        transition-delay: 0ms;
+    }
+    
 }
 
 .swiper {
@@ -307,3 +327,41 @@ h3{
     transition-delay: 400ms;
 }
 
+.contato{
+    background: #f4f1ec;
+    height: 1000px;
+    padding-top: 150px;
+}
+
+.titulo-contato{
+    color: #222344;
+    font-size: 48px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+label{
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+.btn-enviar{
+    background-color: #cdad7d;
+    margin-top: 25px;
+    color: #222344;
+}
+
+.btn-enviar:hover{
+    color: #cdad7d;
+    background-color: #222344;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0.25rem #cdad7d !important;
+    border-color: #cdad7d !important;
+}
+
+textarea:focus{
+    box-shadow: 0 0 0 0.25rem #cdad7d !important;
+    border-color: #cdad7d !important;
+}

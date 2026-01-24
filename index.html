@@ -24,6 +24,17 @@
 
 
   </head>
+
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JE9ELX0F4R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JE9ELX0F4R');
+    </script>
+
   <body>
     <div class="container-fluid container-intro">
         <img src="./images/pexels-goumbik-574071.jpg" class="img-fluid bgimg">
@@ -76,7 +87,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                            <a href="https://w.app/guilhermesiena" target="_blank"><button type="button" class="btn btn-perfil">Entre em contato</button></a>
+                            <a href="https://wa.me/5514981071505" target="_blank"><button type="button" class="btn btn-perfil">Entre em contato</button></a>
                         </div>
                     </div>
                 </div>
@@ -171,10 +182,51 @@
         </div>
     </div>
 
+    <div class="container-fluid contato">
+        <div class="container">
+            <h1 class="titulo-contato">Entre em contato</h1>
+            <form>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 co-md-8 col-sm-10">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 co-md-8 col-sm-10">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 co-md-8 col-sm-10">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 co-md-8 col-sm-10">
+                        <label for="mensagem" class="form-label">Deixe sua mensagem:</label>
+                        <textarea class="form-control" id="mensagem" rows="5" name="mensagem" required></textarea>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 co-md-8 col-sm-10">
+                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                    </div>
+                </div>
+                
+                
+            </form>
+
+        </div>
+    </div>
+
+
     <div class="container-fluid rodape">
         <div class="row justify-content-center">
             <div class="col-8 col-sm-8 col-md-1 col-lg-1">
-                <a href="https://w.app/guilhermesiena" target="_blank"><h5 class="texto-rodape"><i class="bi bi-whatsapp"></i> Whatsapp</h5></a>
+                <a href="https://wa.me/5514981071505" target="_blank"><h5 class="texto-rodape"><i class="bi bi-whatsapp"></i> Whatsapp</h5></a>
             </div>
             <div class="col-8 col-sm-8 col-md-1 col-lg-1">
                 <a href="https://www.instagram.com/guilhermevsm/" target="_blank"><h5 class="texto-rodape"><i class="bi bi-instagram"></i> Instagram</h5></a>
@@ -183,7 +235,7 @@
                 <a href="https://www.linkedin.com/in/guilhermevsm" target="_blank"><h5 class="texto-rodape"><i class="bi bi-linkedin"></i> Linkedin</h5></a>
             </div>
             <div class="col-12 col-sm-12 col-md-2 col-lg-2">
-                <a href=""><h5 class="texto-rodape"><i class="bi bi-envelope"></i> contato@guilhermesiena.com.br</h5></a>
+                <a href="mailto:contato@guilhermesiena.com.br"><h5 class="texto-rodape"><i class="bi bi-envelope"></i> contato@guilhermesiena.com.br</h5></a>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -197,11 +249,11 @@
     </div>
     
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
+    <script src="./mail.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
